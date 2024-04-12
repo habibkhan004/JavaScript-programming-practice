@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        let arr=["asad","ali","saad","zaid"];
+        for (let index = 0; index < arr.length; index++) {
+            console.log (arr[index]);
+            
+        }
+        
+        arr.forEach(function f(element) {
+            console.log(element)
+        });
+        
+        for (elements of arr) {
+            console.log(elements)
+        }
+        let employee= {
+            names : "ali",
+            id : 2,
+            salary :20000,
+        };
+        
+        for (key in employee) {
+             console.log(`the ${key} of emplyee is ${employee[key]}`)
+            }
+        
+    </script>
+</body>
+</html>

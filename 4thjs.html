@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope of varibales/if else,switch</title>
+</head>
+<body>
+    <div class="box" id="box1">
+        <h2>this is Javascript</h2>
+        <h2>this is Javascript</h2>
+        <h2>this is Javascript</h2>
+        <button class="btn" ondblclick="asad()">calculate</button>
+    </div>
+
+    <script>
+        function asad()
+        {
+        let a=10;
+        b=20;
+        c=1;
+        switch (c) {
+            case 1:
+                console.log(a+b);
+                break;
+            case 2:
+                console.log(a-b);
+                break;
+            default:
+                break;
+        }
+        if(a>b)
+        {
+            console.log(a+" is greater than "+b);
+        }
+        else{
+            console.log(b+" is greater than "+a);
+        }
+    }
+    </script>
+</body>
+</html>

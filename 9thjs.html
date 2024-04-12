@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        this is the tutorial of time
+    </h1>
+    Time now is :<span id="time"></span>
+
+    <script>
+        function greet(name){
+            console.log("hello world "+ name);
+        }
+        // setTimeout(greet,4000, "take care");
+
+        // interval=setInterval(greet, 2000);
+        // clearInterval(interval);
+        function displaytime()
+        {
+            time= new Date();
+            // console.log(time);
+            document.getElementById('time').innerHTML=time;
+        }
+        setInterval(displaytime,1000);
+    </script>
+</body>
+</html>

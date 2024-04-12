@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let user=prompt("Enter S , W or G");
+        let useri=Math.floor(Math.random()*3)
+        let cpu=["S","W","G"][useri]
+        console.log(cpu)
+        if(cpu==="S" && user==="S"){
+            document.write(`CPU : ${cpu} <br> user :${user} <br>`)
+            document.write("no body win")
+        }
+        if(cpu==="W" && user==="W"){
+            document.write(`CPU : ${cpu} <br> user :${user} <br>`)
+            document.write("no body win")
+        }
+        if(cpu==="G" && user==="G"){
+            document.write(`CPU : ${cpu} <br> user :${user} <br>`)
+            document.write("no body win")
+        }
+        if(cpu==="S" && user==="W"){
+            document.write(`CPU : ${cpu} <br> user :${user} <br>`)
+            document.write("computer win")
+        }
+        if(cpu==="S" && user==="G"){
+            document.write(`CPU : ${cpu} <br> user :${user} <br>`)
+            document.write("user win")
+        }
+        if(cpu==="W" && user==="S"){
+            document.write(`CPU : ${cpu} <br> user :${user} <br>`)
+            document.write("user win")
+        }
+        if(cpu==="W" && user==="G"){
+            document.write(`CPU : ${cpu} <br> user :${user} <br>`)
+            document.write("computer win")
+        }
+        if(cpu==="G" && user==="S"){
+            document.write(`CPU : ${cpu} <br> user :${user} <br>`)
+            document.write("computer win")
+        }
+        if(cpu==="G" && user==="W"){
+            document.write(`CPU : ${cpu} <br> user :${user} <br>`)
+            document.write("user win")
+        }
+
+
+        
+    </script>
+</body>
+</html>

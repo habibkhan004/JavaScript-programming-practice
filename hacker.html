@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .box{
+            color: rgb(13, 224, 13);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            
+        }
+        #hhh{
+            font-size: 25px;
+            margin: 20px;
+            padding: 10px;
+        }
+       
+        #txt{
+            color: rgb(6, 228, 6);
+            background-color: black;
+            padding: 10px;
+            font-size: 25px;
+            border-radius: 5px;
+        }
+        #btn{
+            margin-top: 10px;
+            font-size: 20px;
+            border: 2px solid rgb(5, 241, 5);
+            cursor: pointer;
+            color: rgb(6, 228, 6);
+            background-color: black;
+            padding: 5px;
+            border-radius: 5px;
+            width: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="container" id="con">
+            <h1 style="font-size: 60px;">Hackerman</h1>
+            <form action="" class="frm">
+                <input id="txt" type="text" placeholder="enter username"><br>
+                <input id="btn" type="button" value="Hack">
+            </form>
+        </div>
+        <div id="hhh">
+
+        </div>
+    </div>
+
+    <script>
+        let arr=["initiallizing....","finalizing....","password finding.....","no match found","trying again...","applying brute force","match found","retrieving facebook password","hacked successfuly"];
+        let sleep= async (seconds)=>{
+            return new Promise((resolve,reject)=>{
+                setTimeout(() => {
+                 resolve(true)
+                },seconds*1000);
+            })
+        }
+        
+        const Hack=async(message)=>{
+            await sleep(2);
+            let c=document.getElementById('hhh')
+            c.innerHTML=c.innerHTML + message + "<br>"
+        }
+        
+        const hackerman=async ()=>{
+          for (let index = 0; index < arr.length; index++) {
+            await Hack(arr[index])
+          }
+          }
+         let i=document.getElementById('btn');
+         i.addEventListener('click',hackerman)
+       
+    </script>
+</body>
+</html>

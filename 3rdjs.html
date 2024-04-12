@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions in Javascript</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <h1>my name is Ahmad Said</h1>
+    </div>
+
+    <script>
+        var str=" this is string function in java";
+        console.log(str[2]);
+        console.log(str.indexOf('i'));
+        console.log(str.lastIndexOf('i'));
+        console.log(str.toLocaleUpperCase());
+        var a=str.length;
+        var b="this is replaced";
+        console.log(a);
+        var replace=str.replace('string','b')
+        console.log(replace);
+        var char2=str.charAt(2);
+        console.log(char2);
+        var trim="      this  is  extra     spaces      ";
+        console.log(trim);
+        console.log(trim.trim());
+        var position=str.slice(1,10);
+        console.log(position);
+        position=str.substr(1,10);
+        console.log(position);
+        console.log(str.toLocaleLowerCase());
+        console.log(str.toUpperCase());
+        console.log(str.charCodeAt(2));
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 400px;
+            border: 2px solid black;
+            border-radius: 8px;
+            background-color: rgb(247, 244, 240);
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            align-items: center;
+        }
+        .btn{
+            height: 30px;
+            width: 100px;
+            background-color: rgb(78, 78, 209);
+            color: white;
+            border-radius: 3px;
+            font-size: large;
+            margin-top: 150px;
+            cursor: pointer;
+        }
+        .container{
+            width: 300px;
+            height: 100px;
+            text-align: center;
+            font-size: large;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Tell Me a Joke</h1>
+        <div class="container" id="box1">
+        
+    </div>
+        <button class="btn" onclick="joke()">Next</button>
+             
+    </div>
+
+    <script>
+        function joke(){
+   let asad= Math.random()*100;
+   asad=Number.parseInt(asad);
+   let jokes = [
+  "Why do programmers prefer dark mode? Because light attracts bugs!",
+  "Why did the JavaScript developer go broke? Because he kept losing his cache!",
+  "How do you comfort a JavaScript bug? You console it!",
+  "Why do programmers prefer coffee? Because it helps with Java!",
+  "Why was the JavaScript developer sad? Because he didn't 'null' his emotions!",
+  "What's a programmer's favorite hangout place? The Foo Bar!",
+  "Why don't programmers like to go outside? The sunlight causes too many reflections!",
+  "Why did the function go to therapy? It had too many issues!",
+  "Why did the programmer quit his job? He didn't get arrays!",
+  "What do you call a programming language that doesn't work? A broken script!",
+  "Why do programmers always mix up Christmas and Halloween? Because Oct 31 == Dec 25!",
+  "Why do programmers prefer dark chocolate? It has a high byte count!",
+  "What did the server say to the client who was having trouble connecting? 'Have you tried turning it off and on again?'",
+  "How does a computer get drunk? It takes screenshots!",
+  "Why do programmers prefer Linux? Because root is always with them!",
+  "Why did the programmer get thrown out of school? He refused to take classes!",
+  "Why was the JavaScript function sad? It had too many arguments!",
+  "Why do programmers always mix up Christmas and Halloween? Because Oct 31 == Dec 25!",
+  "How do you comfort a JavaScript bug? You console it!",
+  "What do you call a developer who doesn't use version control? A reckless coder!",
+  "Why did the developer go broke? Because he used up all his cache!",
+  "Why did the JavaScript library break up with the CSS stylesheet? It wasn't a good match!",
+  "How do you comfort a JavaScript bug? You console it!",
+  "Why do programmers prefer dark mode? Because light attracts bugs!",
+  "Why do JavaScript developers prefer dark themes? Because light attracts bugs!",
+  "Why did the JavaScript developer leave his job? He didn't get arrays!",
+  "Why did the programmer go to therapy? Too many issues!",
+  "What's a computer's favorite beat? An algorithm!",
+  "Why do programmers prefer dark mode? Because light attracts bugs!",
+  "What's a programmer's favorite place in the UK? Manchester!",
+  "Why do Java developers wear glasses? Because they don't see sharp!",
+  "Why did the JavaScript developer go broke? Because he kept losing his cache!",
+  "Why do programmers prefer dark mode? Because light attracts bugs!",
+  "Why do JavaScript developers prefer dark themes? Because light attracts bugs!",
+  "Why did the JavaScript developer leave his job? He didn't get arrays!",
+  "Why did the programmer go to therapy? Too many issues!",
+  "What's a computer's favorite beat? An algorithm!",
+  "Why do programmers prefer dark mode? Because light attracts bugs!",
+  "What's a programmer's favorite place in the UK? Manchester!",
+  "Why do Java developers wear glasses? Because they don't see sharp!",
+  "Why was the JavaScript developer sad? Because he didn't 'null' his emotions!",
+  "What's a programmer's favorite snack? A bit!",
+  "Why do programmers prefer dark mode? Because light attracts bugs!",
+  "What's a programmer's favorite place in the UK? Manchester!",
+  "Why do Java developers wear glasses? Because they don't see sharp!",
+  "Why was the JavaScript developer sad? Because he didn't 'null' his emotions!",
+  "What's a programmer's favorite snack? A bit!",
+  "Why do programmers prefer dark mode? Because light attracts bugs!",
+  "Why do JavaScript developers prefer dark themes? Because light attracts bugs!",
+  "Why did the JavaScript developer leave his job? He didn't get arrays!",
+  "Why did the programmer go to therapy? Too many issues!",
+  "What's a computer's favorite beat? An algorithm!",
+  "Why do programmers prefer dark mode? Because light attracts bugs!",
+  "What's a programmer's favorite place in the UK? Manchester!",
+  "Why do Java developers wear glasses? Because they don't see sharp!",
+  "Why was the JavaScript developer sad? Because he didn't 'null' his emotions!",
+  "What's a programmer's favorite snack? A bit!",
+  "Why do programmers prefer dark mode? Because light attracts bugs!",
+  "What's a programmer's favorite place in the UK? Manchester!",
+  "Why do Java developers wear glasses? Because they don't see sharp!",
+  "Why was the JavaScript developer sad? Because he didn't 'null' his emotions!",
+  "What's a programmer's favorite snack? A bit!",
+  "Why do programmers prefer dark mode? Because light attracts bugs!",
+  "Why did the JavaScript developer go broke? Because he kept losing his cache!",
+  "How do you comfort a JavaScript bug? You console it!",
+  "Why do programmers prefer coffee? Because it helps with Java!",
+  "Why was the JavaScript developer sad? Because he didn't 'null' his emotions!",
+  "What's a programmer's favorite hangout place? The Foo Bar!",
+  "Why don't programmers like to go outside? The sunlight causes too many reflections!",
+  "Why did the function go to therapy? It had too many issues!",
+  "Why did the programmer quit his job? He didn't get arrays!",
+  "What do you call a programming language that doesn't work? A broken script!",
+  "Why do programmers always mix up Christmas and Halloween? Because Oct 31 == Dec 25!",
+  "Why do programmers prefer dark chocolate? It has a high byte count!",
+  "What did the server say to the client who was having trouble connecting? 'Have you tried turning it off and on again?'",
+  "How does a computer get drunk? It takes screenshots!",
+  "Why do programmers prefer Linux? Because root is always with them!",
+  "Why did the programmer get thrown out of school? He refused to take classes!",
+  "Why was the JavaScript function sad? It had too many arguments!",
+  "Why do programmers always mix up Christmas and Halloween? Because Oct 31 == Dec 25!",
+  "How do you comfort a JavaScript bug? You console it!",
+  "What do you call a developer who doesn't use version control? A reckless coder!",
+  "Why did the developer go broke? Because he used up all his cache!",
+  "Why did the JavaScript library break up with the CSS stylesheet? It wasn't a good match!",
+  "How do you comfort a JavaScript bug? You console it!",
+  "Why do programmers prefer dark mode? Because light attracts bugs!",
+  "Why do JavaScript developers prefer dark themes? Because light attracts bugs!",
+  "Why did the JavaScript developer leave his job? He didn't get arrays!",
+  "Why did the programmer go to therapy? Too many issues!",
+  "What's a computer's favorite beat? An algorithm!",
+  "Why do programmers prefer dark mode? Because light attracts bugs!",
+  "What's a programmer's favorite place in the UK? Manchester!",
+  "Why do Java developers wear glasses? Because they don't see sharp!",
+  "Why was the JavaScript developer sad? Because he didn't 'null' his emotions!",
+ "What's a programmer's favorite snack? A bit!",
+  "Why do programmers prefer dark mode? Because light attracts bugs!",
+  "What's a programmer's favorite place in the UK? Manchester!",
+  "Why do Java developers wear glasses? Because they don't see sharp!",
+  "Why was the JavaScript developer sad? Because he didn't 'null' his emotions!",
+  "What's a programmer's favorite snack? A bit!",
+  "Why do programmers prefer dark mode? Because light attracts bugs!",
+  "Why did the JavaScript developer go broke? Because he kept losing his cache!",
+  "How do you comfort a JavaScript bug? You console it!",
+  "Why do programmers prefer coffee? Because it helps with Java!",
+  "Why was the JavaScript developer sad? Because he didn't 'null' his emotions!",
+  "What's a programmer's favorite hangout place? The Foo Bar!",
+  "Why don't programmers like to go outside? The sunlight causes too many reflections!",
+  "Why did the function go to therapy? It had too many issues!",
+  "Why did the programmer quit his job? He didn't get arrays!",
+  "What do you call a programming language that doesn't work? A broken script!",
+  "Why do programmers always mix up Christmas and Halloween? Because Oct 31 == Dec 25!",
+  "Why do programmers prefer dark chocolate? It has a high byte count!",
+  "What did the server say to the client who was having trouble connecting? 'Have you tried turning it off and on again?'",
+  "How does a computer get drunk? It takes screenshots!",
+  "Why do programmers prefer Linux? Because root is always with them!",
+  "Why did the programmer get thrown out of school? He refused to take classes!",
+  "Why was the JavaScript function sad? It had too many arguments!",
+  "Why do programmers always mix up Christmas and Halloween? Because Oct 31 == Dec 25!",
+  "How do you comfort a JavaScript bug? You console it!",
+  "What do you call a developer who doesn't use version control? A reckless coder!",
+  "Why did the developer go broke? Because he used up all his cache!",
+  "Why did the JavaScript library break up with the CSS stylesheet? It wasn't a good match!",
+  "How do you comfort a JavaScript bug? You console it!",
+  "Why do programmers prefer dark mode? Because light attracts bugs!",
+  "Why do JavaScript developers prefer dark themes? Because light attracts bugs!",
+  "Why did the JavaScript developer leave his job? He didn't get arrays!",
+  "Why did the programmer go to therapy? Too many issues!",
+  "What's a computer's favorite beat? An algorithm!",
+  "Why do programmers prefer dark mode? Because light attracts bugs!",
+  "What's a programmer's favorite place in the UK? Manchester!",
+  "Why do Java developers wear glasses? Because they don't see sharp!",
+  "Why was the JavaScript developer sad? Because he didn't 'null' his emotions!",
+  "What's a programmer's favorite snack? A bit!",
+  "Why do programmers prefer dark mode? Because light attracts bugs!",
+  "What's a programmer's favorite place in the UK? Manchester!",
+  "Why do Java developers wear glasses? Because they don't see sharp!",
+  "Why was the JavaScript developer sad? Because he didn't 'null' his emotions!",
+  "What's a programmer's favorite snack? A bit!",
+  "Why do programmers prefer dark mode? Because light attracts bugs!",
+  "Why did the JavaScript developer go broke? Because he kept losing his cache!",
+  "How do you comfort a JavaScript bug? You console it!",
+  "Why do programmers prefer coffee? Because it helps with Java!",
+  "Why was the JavaScript developer sad? Because he didn't 'null' his emotions!",
+  "What's a programmer's favorite hangout place? The Foo Bar!",
+  "Why don't programmers like to go outside? The sunlight causes too many reflections!",
+  "Why did the function go to therapy? It had too many issues!",
+  "Why did the programmer quit his job? He didn't get arrays!",
+  "What do you call a programming language that doesn't work? A broken script!",
+  "Why do programmers always mix up Christmas and Halloween? Because Oct 31 == Dec 25!",
+  "Why do programmers prefer dark chocolate? It has a high byte count!",
+  "What did the server say to the client who was having trouble connecting? 'Have you tried turning it off and on again?'",
+  "How does a computer get drunk? It takes screenshots!",
+  "Why do programmers prefer Linux? Because root is always with them!",
+  "Why did the programmer get thrown out of school? He refused to take classes!",
+  "Why was the JavaScript function sad? It had too many arguments!",
+  "Why do programmers always mix up Christmas and Halloween? Because Oct 31 == Dec 25!",
+  "How do you comfort a JavaScript bug? You console it!",
+  "What do you call a developer who doesn't use version control? A reckless coder!",
+  "Why did the developer go broke? Because he used up all his cache!",
+  "Why did the JavaScript library break up with the CSS stylesheet? It wasn't a good match!",
+][asad];
+document.getElementById("box1").innerHTML=jokes;
+console.log(asad)
+   
+        }
+
+
+    </script>
+</body>
+</html>

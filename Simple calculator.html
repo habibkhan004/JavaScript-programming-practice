@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<head>
+<!-- saved from url=(0033)http://127.0.0.1:5500/web/abc.htm -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+    <script>
+        function add()
+        {
+            var a,b,c;
+            a=form1.no1.value;
+            b=form1.no2.value;
+            a=parseInt(a);
+            b=parseInt(b);
+            c=a+b;
+            form1.res.value=c;
+        }
+        function sub()
+        {
+            var a,b,c;
+            a=form1.no1.value;
+            b=form1.no2.value;
+            a=parseInt(a);
+            b=parseInt(b);
+            c=a-b;
+            form1.res.value=c;
+        }
+        function multiply()
+        {
+            var a,b,c;
+            a=form1.no1.value;
+            b=form1.no2.value;
+            a=parseInt(a);
+            b=parseInt(b);
+            c=a*b;
+            form1.res.value=c;
+        }
+        function divide()
+        {
+            var a,b,c;
+            a=form1.no1.value;
+            b=form1.no2.value;
+            a=parseInt(a);
+            b=parseInt(b);
+            c=a/b;
+            form1.res.value=c;
+        }
+    </script>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            font-size: large;
+        }
+        form{
+            border: 5px solid black;
+            border-radius: 10px;
+            padding: 15px;
+            border-style: double;
+            text-align: center;
+            font-size: large;
+        }
+        .btn{
+            background-color: black;
+            border: 2px solid rgb(52, 11, 235);
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: gold;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <form name="form1">
+            <h1>Simple Calculator</h1>
+        Number 1: <input type="text" name="no1" placeholder="Enter 1st Number">
+        <br>
+        <br>
+        Number 2: <input type="text" name="no2" placeholder="Enter 2nd Number">
+        <br>
+        <br>
+        <input type="button" class="btn" value="add" onclick="add()">
+        <input type="button" class="btn" value="sub" onclick="sub()">
+        <input type="button" class="btn" value="mul" onclick="multiply()">
+        <input type="button" class="btn" value="div" onclick="divide()">
+        <br>
+        <br>
+        Result : <input type="text" name="res">
+        <br>
+        <br>
+        <input type="reset" class="btn">
+         <p>This project is made with the help of html,css and javascript</p>
+        </form>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

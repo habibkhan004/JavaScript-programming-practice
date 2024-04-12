@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            background:url(images/desktop-wallpaper-glass-on-a-pattern-blue-islamic-design.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-clip: content-box;
+         }
+        .box{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(14px);
+            border: 2px solid black;
+            box-shadow: 3px 3px 3px 3px darkgray;
+            border-radius: 18px;
+            width: 300px;
+            margin: auto;
+            margin-top: 200px;
+            text-align: center;
+            padding: 32px;
+        }
+        #clock{
+            color: white;
+           
+            font-size: 50px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box" >
+        <h2>
+            Clock
+        </h2>
+        <span id="clock"></span>
+        
+    </div>
+
+    <script>
+     function time(){
+        let a=new Date();
+        a.toUTCString(a)
+        let h=a.getHours();
+        let m=a.getMinutes();
+        let s=a.getSeconds();
+        let d=a.getDay();
+        let mm=a.getMonth();
+        let y=a.getFullYear();
+        let clock=document.getElementById("clock");
+        
+        clock.innerHTML=(h+"  :  " +m + "  :  " +s)
+        }
+        setInterval(time, 1000);
+        
+    </script>
+</body>
+</html>

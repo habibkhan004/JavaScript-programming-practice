@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       
+        let num=Math.random()*100;
+        num=Number.parseInt(num);
+        let a;
+        let score=100;
+        while(a!= num)
+        {
+            score=score-1;
+            a=prompt("guess a number")
+            if(a==num){
+                console.log("you guess the actual number");
+                console.log("your score is "+ (100-score));
+            }
+            if(a>num){
+                console.log("the number you guessed is bigger than the actual number");
+            }
+            if(a<num){
+                console.log("the number you guessed is smaller than the actual number");
+            }
+        }
+        
+
+    </script>
+</body>
+</html>

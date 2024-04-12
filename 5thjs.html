@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays and objects</title>
+</head>
+<body>
+    <h1>this is arrays tutorial</h1>
+    <h1>this is arrays tutorial</h1>
+    <h1>this is arrays tutorial</h1>
+
+
+    <script>
+        let name=[3];
+        name[0]="asad";
+        name[1]="khan";
+        name[2]="jamal";
+        for (let index = 0; index < name.length; index++) {
+            console.log(name[index]);
+        }
+        console.log(name.length);
+        let sort=[3,4,6,2,6];
+        console.log(sort.length);
+        sort=sort.sort();
+        console.log(sort);
+        sort.push("this is pushed")
+        console.log(sort);
+        
+        let employee= {
+            names : "ali",
+            id : 2,
+            salary :20000,
+        }
+        console.log(employee.names)
+        console.log(employee['names'])
+        console.log(employee['id'])
+    </script>
+</body>
+</html>
